@@ -18,7 +18,7 @@ public class Personaje{
 	//metodos (llevan tipo de dato y puede ser 
 	// cualquier otro nombre)
 	public void setNombre(String nombre){
-		if (Integer.parseInt(nombre) > 3 && Integer.parseInt(nombre) < 20){
+		if (nombre.length() > 3 && nombre.length() < 20){
 			this.nombre = nombre;
 		}	
 	}
