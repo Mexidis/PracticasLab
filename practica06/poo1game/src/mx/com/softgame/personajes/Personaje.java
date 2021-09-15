@@ -1,4 +1,4 @@
-//hora de inicio 9:10 AM
+//hora de inicio 10:02 AM
 package mx.com.softgame.personajes;
 public class Personaje{
 
@@ -39,6 +39,9 @@ public class Personaje{
 				this.edad = edad;
 				return true;
 			}
+	}
+	public String getDetalle() {
+		
 	}	
 	
 }
