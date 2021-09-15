@@ -30,10 +30,16 @@ public class PruebaPersonaje{
 		per08.setNombre("Hanna");
 		per10.setNombre("Jorge Abraham");
 
-		int newEdad = (int)(Math.random()+1001);
-		per07.setEdad(newEdad);
-		per09.setEdad(newEdad);
+		int nuevaEdad_1 = (int)(Math.random()*1001);
+		int nuevaEdad_2 = (int)(Math.random()*1001);
+		per07.setEdad(nuevaEdad_1);
+		per09.setEdad(nuevaEdad_2);
 
+		per01.getDetalle();
+		per02.getDetalle();
+		per03.getDetalle();
+		per04.getDetalle();
+		per05.getDetalle();
     }
 }
-//hora de finalizacion: 11.57
+//hora de finalizacion: 13.15
