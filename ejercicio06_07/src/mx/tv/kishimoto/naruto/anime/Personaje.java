@@ -1,5 +1,5 @@
-//hora de inicio 10:02 AM
-package mx.com.softgame.personajes;
+//hora de inicio 8:02 AM
+package mx.tv.kishimoto.naruto.anime;
 public class Personaje{
 
 	//atributos
@@ -46,7 +46,7 @@ public class Personaje{
 	
 }
 
-//Hora de finalización 13.15
+//Hora de finalización 
 
 
 
