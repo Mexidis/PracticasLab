@@ -5,19 +5,27 @@ public class Personaje{
 
 	//atributos
 	private String nombre;
+	//(int)(Math.random()*501)
+	private int poder = 0 | 500;
 	private int edad;
 
-	//constructores (no lleva tipo de dato 
-	// y tiene el nombre de la clase)
-	public Personaje(String nombre){
-		//"this" es para el atributo
+	//constructores
+
+	public Personaje(String nombre, int poder){
 		this.nombre = nombre;
-		//sin "this" es para la var. local (dentro del )
-		edad = 0;
+		this.poder = poder;
 	}
 
-	//metodos (llevan tipo de dato y puede ser 
-	// cualquier otro nombre)
+	//metodos 
+
+	public void setPoder(int num){
+		num = num + poder;
+	}
+
+	public void getDatos(){
+		System.out.println("\t"+nombre+"\t"+poder);
+	}
+
 	public void setNombre(String nombre){
 		if (nombre.length() > 3 && nombre.length() < 20){
 			this.nombre = nombre;
