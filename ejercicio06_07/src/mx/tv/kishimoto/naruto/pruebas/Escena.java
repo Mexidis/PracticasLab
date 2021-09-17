@@ -23,6 +23,8 @@ public class Escena{
 			System.out.println(n);
 			n = (int)(Math.random()*1001);
 		}
+		usumaki.setPoder(n);
+		System.out.println(naruto.getDatos());
 
 	}
 }
