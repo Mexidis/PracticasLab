@@ -14,5 +14,15 @@ public class Escena{
 		System.out.println(sakura.getDatos());
 		System.out.println("---");
 
+		Personaje usumaki = naruto;
+		System.out.println(usumaki.getDatos());
+		System.out.println("---");
+
+		int n = (int)(Math.random()*1001);
+		while (n > 500){
+			System.out.println(n);
+			n = (int)(Math.random()*1001);
+		}
+
 	}
 }

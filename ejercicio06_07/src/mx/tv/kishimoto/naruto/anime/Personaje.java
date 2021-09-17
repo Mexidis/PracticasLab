@@ -39,8 +39,7 @@ public class Personaje{
 	}
 
 	public String getDatos(){
-		String alaa = nombre+"\t"+poder;
-		return alaa;
+		return nombre+"\t"+poder;
 	}
 
 	public void setNombre(String nombre){
