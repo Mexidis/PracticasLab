@@ -1,5 +1,6 @@
-//hora de inicio 8:02 AM
+//hora de inicio 8:03 AM
 package mx.tv.kishimoto.naruto.anime;
+
 public class Personaje{
 
 	//atributos
