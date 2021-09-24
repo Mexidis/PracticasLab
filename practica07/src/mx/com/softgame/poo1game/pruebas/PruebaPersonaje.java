@@ -16,6 +16,7 @@ public class PruebaPersonaje{
 			n = (int)(Math.random()*100);
 			m = (int)(Math.random()*100);
 		}
+		outfor:
 		for(int i = n; i<=m; i++){
 			int ed = (int)(Math.random()*250);
 			if(per01.setEdad(ed)){
@@ -35,16 +36,17 @@ public class PruebaPersonaje{
 			} else{
 				System.out.println(per03.getDetalle()+" sin modificacion en edad a "+ed);
 			}
+
 			ed = (int)(Math.random()*150);
 			do{
 				ed = (int)(Math.random()*150);
-				System.out.println(ed);
 				if (ed == 150){
 					System.out.println("***Bingo 150***");
+					// outfor
+					continue outfor;
 				} 
 			} while (!per04.setEdad(ed));
-			//outfor
-			continue;
+			System.out.println(per04.getDetalle());
 		}
     }
 }
