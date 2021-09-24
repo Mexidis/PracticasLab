@@ -10,8 +10,6 @@ public class Personaje{
 		this.nombre = nombre;
 	}
 
-	//metodos (llevan tipo de dato y puede ser 
-	// cualquier otro nombre)
 	public void setNombre(String nombre){
 		if (nombre.length() > 3 && nombre.length() < 20){
 			this.nombre = nombre;
@@ -36,12 +34,12 @@ public class Personaje{
 			}
 	}
 	public String getDetalle() {
-		return "Personaje "+nombre+"\t con edad "+edad;
+		return nombre+"\t"+edad;
 	}	
 	
 }
 
-//Hora de finalización 13.15
+//Hora de finalización 
 
 
 
