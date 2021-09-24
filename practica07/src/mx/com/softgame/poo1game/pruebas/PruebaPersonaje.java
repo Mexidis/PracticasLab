@@ -1,6 +1,6 @@
 //hora de inicio 7.05
 package mx.com.softgame.poo1game.pruebas;
-import  mx.com.softgame.poo1game.personajes.Personaje;
+import  mx.com.softgame.poo1game.personajes.*;
 
 public class PruebaPersonaje{
 	public static void main(String[] args) {
@@ -19,7 +19,15 @@ public class PruebaPersonaje{
 		Personaje per05 = new Personaje("Edwin");
 		per05.setEdad(500);
 		System.out.println(per05.getDetalle());
-		
+
+		int n = 0;
+		int m = 0;
+
+		while(n>=m){
+			int n = (int)(Math.random()*100);
+			int m = (int)(Math.random()*100);
+		}
+
     }
 }
 //hora de finalizacion: 13.15
