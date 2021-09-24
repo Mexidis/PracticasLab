@@ -50,4 +50,4 @@ public class PruebaPersonaje{
 		}
     }
 }
-//hora de finalizacion: 
+//hora de finalizacion: 10.48

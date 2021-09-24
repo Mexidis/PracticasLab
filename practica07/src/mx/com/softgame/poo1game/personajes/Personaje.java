@@ -38,7 +38,7 @@ public class Personaje{
 	
 }
 
-//Hora de finalización 
+//Hora de finalización 10.48
 
 
 
