@@ -8,7 +8,6 @@ public class PruebaPersonaje{
 		Personaje per02 = new Personaje("Miriam");
 		Personaje per03 = new Personaje("Christian");
 		Personaje per04 = new Personaje("Valeria");
-		Personaje per05 = new Personaje("Edwin");
 
 		int n = 0;
 		int m = 0;
@@ -18,26 +17,34 @@ public class PruebaPersonaje{
 			m = (int)(Math.random()*100);
 		}
 		for(int i = n; i<=m; i++){
-			int ed_1 = (int)(Math.random()*251);
-			int ed_2 = (int)(Math.random()*251);
-			int ed_3 = (int)(Math.random()*251);
-
-			if(!per01.setEdad(ed_1)){
-				System.out.println(per01.getNombre()+" "+per01.getEdad()+" se modifico la edad");
+			int ed = (int)(Math.random()*250);
+			if(per01.setEdad(ed)){
+				System.out.println(per01.getDetalle()+" se modifico la edad");
 			} else{
-				System.out.println(per01.getDetalle()+" sin modificacion en edad a "+per01.getEdad());
+				System.out.println(per01.getDetalle()+" sin modificacion en edad a "+ed);
 			}
-			if(!per02.setEdad(ed_2)){
-				System.out.println(per02.getNombre()+" "+per02.getEdad()+" se modifico la edad");
+			ed = (int)(Math.random()*250);
+			if(per02.setEdad(ed)){
+				System.out.println(per02.getDetalle()+" se modifico la edad");
 			} else{
-				System.out.println(per02.getDetalle()+" sin modificacion en edad a "+per02.getEdad());
+				System.out.println(per02.getDetalle()+" sin modificacion en edad a "+ed);
 			}	
-			if(!per03.setEdad(ed_3)){
-				System.out.println(per03.getNombre()+" "+per03.getEdad()+" se modifico la edad");
+			ed = (int)(Math.random()*250);
+			if(per03.setEdad(ed)){
+				System.out.println(per03.getDetalle()+" se modifico la edad");
 			} else{
-				System.out.println(per03.getDetalle()+" sin modificacion en edad a "+per03.getEdad());
+				System.out.println(per03.getDetalle()+" sin modificacion en edad a "+ed);
 			}
-
+			ed = (int)(Math.random()*150);
+			do{
+				ed = (int)(Math.random()*150);
+				System.out.println(ed);
+				if (ed == 150){
+					System.out.println("***Bingo 150***");
+				} 
+			} while (!per04.setEdad(ed));
+			//outfor
+			continue;
 		}
     }
 }
