@@ -2,13 +2,10 @@
 package mx.tv.kishimoto.naruto.anime;
 
 public class Personaje{
-
 	//atributos
 	private String nombre;
 	private int poder;
-	
 	//constructores
-
 	public Personaje(String nombre, int poder){
 		this.nombre = nombre;
 		this.poder = poder;
@@ -22,9 +19,7 @@ public class Personaje{
 		}
 		this.poder = poder;
 	}
-
 	//metodos 
-
 	public void setPoder(int poder){
 		int resultado = this.poder + poder;
 		if(resultado > 500){
@@ -37,11 +32,9 @@ public class Personaje{
 		}
 		this.poder = resultado;
 	}
-
 	public String getDatos(){
 		return nombre+"\t"+poder;
 	}
-
 	public void setNombre(String nombre){
 		if (nombre.length() > 3 && nombre.length() < 20){
 			this.nombre = nombre;
