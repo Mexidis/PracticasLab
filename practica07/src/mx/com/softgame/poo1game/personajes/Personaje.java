@@ -1,18 +1,13 @@
-//hora de inicio 10:02 AM
-package mx.com.softgame.personajes;
+//hora de inicio 7:05 AM
+package mx.com.softgame.poo1game.personajes;
 public class Personaje{
 
 	//atributos
 	private String nombre;
 	private int edad;
 
-	//constructores (no lleva tipo de dato 
-	// y tiene el nombre de la clase)
 	public Personaje(String nombre){
-		//"this" es para el atributo
 		this.nombre = nombre;
-		//sin "this" es para la var. local (dentro del )
-		edad = 0;
 	}
 
 	//metodos (llevan tipo de dato y puede ser 
@@ -40,8 +35,8 @@ public class Personaje{
 				return true;
 			}
 	}
-	public void getDetalle() {
-		System.out.println("Personaje "+nombre+"\t con edad "+edad);
+	public String getDetalle() {
+		return "Personaje "+nombre+"\t con edad "+edad;
 	}	
 	
 }
