@@ -19,22 +19,22 @@ public class PruebaPersonaje{
 		outfor:
 		for(int i = n; i<=m; i++){
 			int ed = (int)(Math.random()*250);
-			if(per01.setEdad(ed)){
-				System.out.println(per01.getDetalle()+" se modifico la edad");
+			if(per01.setVida(ed)){
+				System.out.println(per01.getDetalle()+" se modifico la Vida");
 			} else{
-				System.out.println(per01.getDetalle()+" sin modificacion en edad a "+ed);
+				System.out.println(per01.getDetalle()+" sin modificacion en Vida a "+ed);
 			}
 			ed = (int)(Math.random()*250);
-			if(per02.setEdad(ed)){
-				System.out.println(per02.getDetalle()+" se modifico la edad");
+			if(per02.setVida(ed)){
+				System.out.println(per02.getDetalle()+" se modifico la Vida");
 			} else{
-				System.out.println(per02.getDetalle()+" sin modificacion en edad a "+ed);
+				System.out.println(per02.getDetalle()+" sin modificacion en Vida a "+ed);
 			}	
 			ed = (int)(Math.random()*250);
-			if(per03.setEdad(ed)){
-				System.out.println(per03.getDetalle()+" se modifico la edad");
+			if(per03.setVida(ed)){
+				System.out.println(per03.getDetalle()+" se modifico la Vida");
 			} else{
-				System.out.println(per03.getDetalle()+" sin modificacion en edad a "+ed);
+				System.out.println(per03.getDetalle()+" sin modificacion en Vida a "+ed);
 			}
 
 			ed = (int)(Math.random()*150);
@@ -46,7 +46,7 @@ public class PruebaPersonaje{
 					// outfor
 					continue outfor;
 				} 
-			} while (!per04.setEdad(ed));
+			} while (!per04.setVida(ed));
 			System.out.println(per04.getDetalle());
 		}
     }

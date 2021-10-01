@@ -1,13 +1,17 @@
-//hora de inicio 7:05 AM
+//hora de inicio: 7:34 AM
+//Hora de finalización:  
 package mx.com.softgame.poo1game.personajes;
 public class Personaje{
 
 	private String nombre;
 	private int vida;
 
+	public Personaje(String nombre, int vida){
+		this.nombre = nombre;
+		vida = 3;
+	}
 	public Personaje(String nombre){
 		this.nombre = nombre;
-		vida = 0;
 	}
 	public void setNombre(String nombre){
 		if (nombre.length() > 3 && nombre.length() < 20){
@@ -38,7 +42,6 @@ public class Personaje{
 	
 }
 
-//Hora de finalización 10.48
 
 
 
