@@ -8,21 +8,22 @@ public class Personaje{
 
 	public Personaje(String nombre, int vida){
 		this.nombre = nombre;
-		vida = 3;
+		this.vida = vida;
+		if (vida < 0) {
+			this.vida = 0;
+			return;
+		}
+		this.vida = vida;
 	}
 	public Personaje(String nombre){
 		this.nombre = nombre;
+		vida = 3;
 	}
-	public void setNombre(String nombre){
-		if (nombre.length() > 3 && nombre.length() < 20){
-			this.nombre = nombre;
-		}	
+	public void decVida(){
+		this.vida -= 1;
 	}
-	public String getNombre(){
-		return nombre;
-	}
-	public void saludar(){
-		System.out.println("Hola Alumno de POO "+nombre);
+	public int decVida(int dec){
+		this.vida - dec = vida;
 	}
 	public int getVida(){
 		return vida;
@@ -35,6 +36,17 @@ public class Personaje{
 				this.vida = vida;
 				return true;
 			}
+	}
+	public void setNombre(String nombre){
+		if (nombre.length() > 3 && nombre.length() < 20){
+			this.nombre = nombre;
+		}	
+	}
+	public String getNombre(){
+		return nombre;
+	}
+	public void saludar(){
+		System.out.println("Hola Alumno de POO "+nombre);
 	}
 	public String getDetalle() {
 		return nombre+"\t"+vida;
