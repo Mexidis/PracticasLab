@@ -15,18 +15,14 @@ public class Personaje{
 		this.vida = 3;
 	}
 	public void decVida(){
-		if (this.vida < 0) {
-			this.vida = this.vida;
-			return;
+		if (this.vida > 0) {
+			this.vida -= 1;
 		}
-		this.vida -= 1;
 	}
 	public void decVida(int dec){
-		if (this.vida < 0) {
-			this.vida = this.vida;
-			return;
+		if (this.vida - dec > 0) {
+			this.vida = this.vida - dec;
 		}
-		this.vida = this.vida - dec;
 	}
 	public int getVida(){
 		return vida;
