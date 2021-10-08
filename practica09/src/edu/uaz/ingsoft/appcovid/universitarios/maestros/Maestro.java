@@ -27,7 +27,7 @@ public class Maestro extends Universitario{
 		boolean result = false;
 		if ((o != null) && (o instanceof Maestro)){
 			Maestro teacher = (Maestro) o;
-			if ((super.getNombre() == teacher.getNombre() && sueldo == teacher.sueldo){
+			if (super.getNombre() == teacher.getNombre() && sueldo == teacher.sueldo){
 				result = true;
 			}
 		}
@@ -35,7 +35,7 @@ public class Maestro extends Universitario{
 	}
 
 	public int hashCode(){
-		int hashcode = this(nombre.hashCode());
+		int hashcode = super.getNombre().hashCode();
 		return hashcode*(int)(sueldo);
 	}
 
