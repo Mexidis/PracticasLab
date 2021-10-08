@@ -8,9 +8,13 @@ public class Universitario{
 	}
 
 	public boolean equals(Object o){
-
+		boolean result = false;
+		if (())
 	}
-	
+
+	public int hashCode(){
+		return ()
+	}
 
 	public String toString(){
 		return nombre;
