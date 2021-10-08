@@ -9,11 +9,17 @@ public class Universitario{
 
 	public boolean equals(Object o){
 		boolean result = false;
-		if (())
+		if ((o != null) && (o instanceof Universitario)){
+			Universitario u = (Universitario) o;
+			if (nombre == u.nombre){
+				result = true;
+			}
+		}
+		return result;
 	}
 
 	public int hashCode(){
-		return ()
+		return Integer.valueOf(nombre).intValue();
 	}
 
 	public String toString(){
