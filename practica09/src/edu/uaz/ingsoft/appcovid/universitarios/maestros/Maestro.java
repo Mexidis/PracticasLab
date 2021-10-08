@@ -21,5 +21,25 @@ public class Maestro extends Universitario{
 			return sueldo = 1000.00f;
 		}
 	}
+
+	public boolean equals(Object o){
+		boolean result = false;
+		if ((o != null) && (o instanceof Maestro)){
+			Maestro lehrer = (Maestro) o;
+			if ((lehrer.equals(lehrer) &&  ){
+				result = true;
+			}
+		}
+		return result;
+	}
+
+	public int hashCode(){
+		int hashcode = this(nombre.hashCode());
+		return hashcode;
+	}
+
+	public String toString(){
+		return this(nombre) +""+ sueldo;
+	}
 }
 	
