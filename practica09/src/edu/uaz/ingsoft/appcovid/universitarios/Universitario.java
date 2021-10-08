@@ -11,7 +11,7 @@ public class Universitario{
 		boolean result = false;
 		if ((o != null) && (o instanceof Universitario)){
 			Universitario u = (Universitario) o;
-			if (nombre == u.nombre){
+			if (nombre.equals(nombre)){
 				result = true;
 			}
 		}
@@ -19,7 +19,8 @@ public class Universitario{
 	}
 
 	public int hashCode(){
-		return Integer.valueOf(nombre).intValue();
+		int hashcode = nombre.hashCode();
+		return hashcode;
 	}
 
 	public String toString(){
