@@ -14,7 +14,7 @@ public class Maestro extends Universitario{
 		this(nombre, 1000.00f);
 	}
 
-	public float sueldo(){
+	public float setSueldo(){
 		if (this.sueldo <= 20000.00f && this.sueldo >= 100.00f){
 			return sueldo;
 		} else{
@@ -39,7 +39,7 @@ public class Maestro extends Universitario{
 	}
 
 	public String toString(){
-		return this(nombre) +""+ sueldo;
+		return super.toString() +"\t"+ sueldo;
 	}
 }
 	
