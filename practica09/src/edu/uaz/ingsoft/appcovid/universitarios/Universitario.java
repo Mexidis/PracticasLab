@@ -7,6 +7,14 @@ public class Universitario{
 		this.nombre = nombre;
 	}
 
+	public void setNombre(String nombre){
+		this.nombre = nombre;
+	}
+
+	public String getNombre(){
+		return nombre;
+	}
+
 	public boolean equals(Object o){
 		boolean result = false;
 		if ((o != null) && (o instanceof Universitario)){
@@ -26,6 +34,4 @@ public class Universitario{
 	public String toString(){
 		return nombre;
 	}
-
-
 }

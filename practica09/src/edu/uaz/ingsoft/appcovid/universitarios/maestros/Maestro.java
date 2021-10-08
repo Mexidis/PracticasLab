@@ -14,10 +14,11 @@ public class Maestro extends Universitario{
 		this(nombre, 1000.00f);
 	}
 
-	public float setSueldo(){
-		if (this.sueldo <= 20000.00f && this.sueldo >= 100.00f){
+	public float setSueldo(float sueldo){
+		if (sueldo <= 20000.00f && sueldo >= 100.00f){
 			return sueldo;
 		} else{
+			this.sueldo = sueldo;
 			return sueldo = 1000.00f;
 		}
 	}
@@ -26,7 +27,7 @@ public class Maestro extends Universitario{
 		boolean result = false;
 		if ((o != null) && (o instanceof Maestro)){
 			Maestro lehrer = (Maestro) o;
-			if ((lehrer.equals(lehrer) &&  ){
+			if ((lehrer.equals(lehrer) && super.no ){
 				result = true;
 			}
 		}
