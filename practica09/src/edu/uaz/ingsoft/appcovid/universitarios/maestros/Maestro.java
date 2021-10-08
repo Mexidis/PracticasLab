@@ -7,21 +7,25 @@ public class Maestro extends Universitario{
 
 	public Maestro(String nombre, float sueldo){
 		super(nombre);
-		this.sueldo = sueldo;
+		if((sueldo <= 20000.00f && sueldo >= 100.00f)){
+			this.sueldo = sueldo;
+		} else{
+			sueldo = 1000.0f;
+		}
 	}
 
 	public Maestro(String nombre){
 		this(nombre, 1000.00f);
 	}
 
-	public float setSueldo(float sueldo){
+	/*public float setSueldo(float sueldo){
 		if (sueldo <= 20000.00f && sueldo >= 100.00f){
 			return sueldo;
 		} else{
 			this.sueldo = sueldo;
 			return sueldo = 1000.00f;
 		}
-	}
+	}*/
 
 	public boolean equals(Object o){
 		boolean result = false;
