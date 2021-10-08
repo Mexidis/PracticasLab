@@ -20,7 +20,7 @@ public class Universitario{
 		if ((o != null) && (o instanceof Universitario)){
 			Universitario u = (Universitario) o;
 			//duda u.nombre
-			if (nombre.equals(nombre)){
+			if (this.nombre.equals(u.nombre)){
 				result = true;
 			}
 		}
