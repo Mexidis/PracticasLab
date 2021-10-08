@@ -5,7 +5,7 @@ public class Alumno extends Universitario{
 	private int grade;
 
 	public Alumno(String nombre, int grade){
-		super.nombre;
+		super(nombre);
 		this.grade = grade;
 	}
 
