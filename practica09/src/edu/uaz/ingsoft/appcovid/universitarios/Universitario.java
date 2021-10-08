@@ -19,6 +19,7 @@ public class Universitario{
 		boolean result = false;
 		if ((o != null) && (o instanceof Universitario)){
 			Universitario u = (Universitario) o;
+			//duda u.nombre
 			if (nombre.equals(nombre)){
 				result = true;
 			}
