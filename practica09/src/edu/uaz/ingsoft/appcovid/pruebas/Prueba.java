@@ -18,17 +18,17 @@ public class Prueba{
 		while(i<personas.length){
 			for(Universitario uni : personas){
 				if(personas[i] == uni){
-					System.out.println("****"+ personas[i] +" es identico a "+ 
+					System.out.println("**** "+ personas[i] +" es identico a "+ 
 						uni +", son el mismo objeto ****");	
 					continue;
-				} else{
-					System.out.println();
-				}
+				} 
 				if(personas[i].equals(uni)){
 					System.out.println("**"+ personas[i] +" es igual a "+ 
 						uni +", son diferentes objetos **");
 					continue;
-				} 
+				} else{
+					System.out.println(personas[i] +" != "+ uni);
+				}
 			}
 			i++;
 		}
