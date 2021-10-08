@@ -14,16 +14,19 @@ public class Prueba{
 			new Alumno("Hanna", 5)
 		};
 
-		i = 0;
+		int i = 0;
 		while(i<personas.length){
 			for(Universitario uni : personas){
-				if(personas[i].equals(p)){
-					System.out.println("****"personas[i] +" es identico a "+ uni +", son el mismo objeto ****");	
+				if(personas[i].equals(uni)){
+					System.out.println("****"+ personas[i] +" es identico a "+ 
+						uni +", son el mismo objeto ****");	
+					continue;
 				}
 				//if (personas[i].equals(uni)){
 
 				//}
 			}
+			i++;
 		}
 	}
 }
