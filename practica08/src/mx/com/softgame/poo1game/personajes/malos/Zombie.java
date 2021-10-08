@@ -32,5 +32,8 @@ public class Zombie extends Personaje{
 		}
 		super.decVida(dec*2);
 	}
+	public boolean getAtaque(){
+		return ataque;
+	}
 
 }
