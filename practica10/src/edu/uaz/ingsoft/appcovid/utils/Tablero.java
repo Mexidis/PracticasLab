@@ -3,7 +3,7 @@ import edu.uaz.ingsoft.appcovid.universitarios.Universitario;
 
 public class Tablero{
 	private static int poss = -1;
-	public static final int MAX = 5;
+	public static final int MAX = 10;
 	private static Universitario[] personas = new Universitario[MAX];
 
 	private Tablero(){
@@ -13,18 +13,21 @@ public class Tablero{
 	public static void mostrar(){
 		System.out.println("* El tablero contiene *");
 		for (Universitario individual : personas) {
-			if(personas.length < 0 || personas.length > MAX){
+			if(individual == null){
 				System.out.println("-");
 			} else{
-				System.out.println(personas);
+				System.out.println(individual);
 			}
 		}
 		System.out.print("* * * * * *");
 	}
 
 	public static void insertar(Universitario u){
-		if(unos == null && (unos.length > poss &&){
-
+		poss += 1;
+		if(poss > -1 && poss < MAX){
+			personas[poss] = u;
+		} else{
+			System.out.println("Imposible insertar en "+ poss);
 		}
 	}
 }
