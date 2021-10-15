@@ -45,7 +45,7 @@ public class Maestro extends Universitario{
 	}
 
 	public String toString(){
-		return super.toString() +"\t"+ sueldo;
+		return "Maestro "+ super.toString() +"\t"+ sueldo;
 	}
 }
 	

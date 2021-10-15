@@ -34,7 +34,7 @@ public class Alumno extends Universitario{
 	}
 
 	public String toString(){
-		return super.toString() +"\t"+ grade;
+		return "Alumno "+ super.toString() +"\t"+ grade;
 	}
 
 }
