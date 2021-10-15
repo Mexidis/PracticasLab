@@ -1,4 +1,4 @@
-package edu.uaz.ingsoft.appcovid.universitarios.utils;
+package edu.uaz.ingsoft.appcovid.utils;
 import edu.uaz.ingsoft.appcovid.universitarios.Universitario;
 
 public class Tablero{
