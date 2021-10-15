@@ -30,4 +30,20 @@ public class Tablero{
 			System.out.println("Imposible insertar en "+ poss);
 		}
 	}
+
+	public static void insertar(Universitario u, int idx){
+		if(idx > -1 && idx < MAX){
+			personas[idx] = u;
+		} else{
+			System.out.println("Imposible insertar en "+ idx);
+		}
+	}
+
+	public static void borrar(){
+		
+		// personas[poss] = null;
+		// poss -= 1;
+	}
+
+
 }
