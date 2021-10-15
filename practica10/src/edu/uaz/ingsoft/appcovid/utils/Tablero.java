@@ -40,9 +40,20 @@ public class Tablero{
 	}
 
 	public static void borrar(){
-		
-		// personas[poss] = null;
-		// poss -= 1;
+		if(poss > -1 && poss < MAX){
+			personas[poss] = null;
+		} else{
+			System.out.println("Imposible borrar en "+ poss);
+		}
+		poss -= 1;
+	}
+
+	public static void borrar(int idx){
+		if(idx > -1 && idx < MAX){
+			personas[idx] = null;
+		} else{
+			System.out.println("Imposible borrar en "+ idx);
+		}
 	}
 
 
