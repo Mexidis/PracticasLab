@@ -12,5 +12,7 @@ public class PruebaUniv{
 		insertar(new Universitario("Saul Alfonso"));
 		insertar(new Maestro("Edwin Brayan", 5000f), 6);
 		insertar(new Alumno("Esther Sarahi", 5));
+
+		mostrar()
 	}
 }
