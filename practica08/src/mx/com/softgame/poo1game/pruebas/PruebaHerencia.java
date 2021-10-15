@@ -19,21 +19,26 @@ public class PruebaHerencia{
 			per01, per02, plan01, plan02, plan03,
 			plan04, zom01, zom02, zom03
 		};
-		for(Personaje locos : personajes ){
-			int crackear = (int)(Math.random()*10);
-			locos.decVida(crackear);
-			System.out.println(locos.getDetalle());
-			if(locos instanceof Planta){
-				Planta plan = (Planta)locos;
-				
+		for(Personaje loco : personajes ){
+			System.out.println(loco.getDetalle());
+			//se pregunta si la variable iteradora
+			// "loco" de personajes es una *INSTANCIA*
+			// de tipo Planta
+			if(loco instanceof Planta){
+				//en caso de cumplirse la condicion
+				//se hace el casteo para trabajar con
+				//objeto de tipo planta. Para usar los metodos propios
+				//de Planta
+				Planta plan = (Planta)loco;
 				System.out.println("Soy planta "+ plan.getEscudo());
-			}
-			if(locos instanceof Zombie){
-				Zombie zombo = (Zombie)locos;
+			}else if(loco instanceof Zombie){
+				Zombie zombo = (Zombie)loco;
 				System.out.println("Soy Zombie "+ zombo.getAtaque());
 			}
-
-			System.out.println(locos.getDetalle());
+			
+			int crackear = (int)(Math.random()*10);
+			loco.decVida(crackear);
+			System.out.println(loco.getDetalle());
 		}
 	}
 }

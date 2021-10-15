@@ -20,8 +20,8 @@ public class Personaje{
 		}
 	}
 	public void decVida(int dec){
-		if (this.vida - dec > 0) {
-			this.vida = this.vida - dec;
+		if (this.vida - dec >= 0) {
+			this.vida -= dec;
 		}
 	}
 	public int getVida(){

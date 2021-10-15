@@ -9,11 +9,10 @@ public class Zombie extends Personaje{
 		this.ataque = ataque;
 	}
 	public Zombie(String nombre, boolean ataque){
-		super(nombre);
+		this(nombre, 3, ataque);
 	}
 	public Zombie(String nombre){
-		super(nombre);
-		this.ataque = false;
+		this(nombre, 3, false);
 	}
 	public String obtenerDetalle(){
 		return super.getDetalle() + " " + ataque;

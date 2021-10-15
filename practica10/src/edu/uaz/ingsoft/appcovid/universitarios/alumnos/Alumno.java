@@ -17,15 +17,6 @@ public class Alumno extends Universitario{
 		this(nombre, 5);
 	}
 
-	// public int setGrade(int grade){
-	// 	if (grade <= 10  && grade >= 0){
-	// 		return grade;
-	// 	} else{
-	// 		this.grade = grade;
-	// 		return grade = 5;
-	// 	}
-	// }
-
 	public boolean equals(Object o){
 		boolean result = false;
 		if ((o != null) && (o instanceof Alumno)){
