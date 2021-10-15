@@ -11,7 +11,17 @@ public class Tablero{
 	}
 
 	public static void mostrar(){
-		System.out.print(Universitario);
+		System.out.println("* El tablero contiene *");
+		for (Universitario individual : personas) {
+			if(personas.length < 0 || personas.length > MAX){
+				System.out.println("-");
+			} else{
+				System.out.println(personas);
+			}
+		}
+		System.out.print("* * * * * *");
 	}
+
+	public 
 
 }
