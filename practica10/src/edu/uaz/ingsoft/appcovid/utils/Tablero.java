@@ -22,6 +22,10 @@ public class Tablero{
 		System.out.print("* * * * * *");
 	}
 
-	public 
+	public static void insertar(Universitario u){
+		for (Universitario unos : personas) {
+			
+		}
+	}
 
 }
