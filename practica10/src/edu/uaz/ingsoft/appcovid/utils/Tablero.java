@@ -23,9 +23,8 @@ public class Tablero{
 	}
 
 	public static void insertar(Universitario u){
-		for (Universitario unos : personas) {
-			
+		if(unos == null && (unos.length > poss &&){
+
 		}
 	}
-
 }
