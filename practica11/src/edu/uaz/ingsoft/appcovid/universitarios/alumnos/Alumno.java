@@ -10,7 +10,7 @@ public class Alumno extends Universitario{
 	public Alumno(String nombre){
 		super(nombre);
 		setCalificacion();
-
+		promedio = getPromedio();
 	}
 
 	// public void forEach(){
@@ -27,7 +27,7 @@ public class Alumno extends Universitario{
 
 	public void setCalificacion(Calificacion c, int indice){
 		calificaciones[indice] = c;
-
+		S
 	}
 
 	public float getPromedio(){
@@ -49,9 +49,10 @@ public class Alumno extends Universitario{
 		boolean result = false;
 		if ((o != null) && (o instanceof Alumno)){
 			Alumno student = (Alumno) o;
-			for (Calificacion pos : calificaciones) {
-				if (super.getNombre() == student.getNombre() && 
-					pos == student.pos){
+			for (Calificacion calif : calificaciones) {
+				if (super.getNombre() == student.getNombre()  
+					                        //no agarra este, checarlo
+					&& calif.getCalif() == student.calif.getCalif()){
 					result = true;
 				}	
 			}
@@ -62,13 +63,13 @@ public class Alumno extends Universitario{
 	public int hashCode(){
 		int hashcode = super.getNombre().hashCode();
 		for (Calificacion pos : calificaciones) {
-			return hashcode*pos;
+			return hashcode*pos.getCalif();
 		}
 	}
 
 	public String toString(){
 		for (Calificacion pos : calificaciones) {
-			return "Alumno "+ super.toString() +"\t"+ pos;
+			return "Alumno "+ super.toString() +"\t"+ pos.getCalif();
 		}
 	}
 
