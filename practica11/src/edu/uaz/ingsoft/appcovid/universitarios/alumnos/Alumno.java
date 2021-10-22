@@ -21,9 +21,10 @@ public class Alumno extends Universitario{
 
 	public void setCalificacion(Calificacion c, int indice){
 		calificaciones[indice] = c;
+		int sumatoria = 0;
 		for (Calificacion pos : calificaciones) {
-			pos += pos;
-			promedio = pos / calificaciones.length;
+			return sumatoria = sumatoria + pos;
+			promedio = sumatoria / calificaciones.length;
 		}
 	}
 
