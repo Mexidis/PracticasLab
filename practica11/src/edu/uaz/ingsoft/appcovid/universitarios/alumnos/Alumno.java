@@ -7,16 +7,16 @@ public class Alumno extends Universitario{
 
 	public Alumno(String nombre){
 		super(nombre);
-		if (grade <= 10  && grade >= 0){
-			this.grade = grade;
+		if (calificaciones[] <= 10  && calificaciones[] >= 0){
+			this.calificaciones[] = calificaciones[];
 		} else{
-			this.grade = 5;
+			this.calificaciones[] = Calificacion.CERO;
 		}
 	}
 
-	public Alumno(String nombre){
-		this(nombre, 5);
-	}
+	// public Alumno(String nombre){
+	// 	this(nombre, 5);
+	// }
 
 	public boolean equals(Object o){
 		boolean result = false;

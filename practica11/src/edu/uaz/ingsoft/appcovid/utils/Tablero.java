@@ -25,17 +25,19 @@ public class Tablero{
 
 //metodo que inserte un Universitario en la proxima
 // posicion y de no ser posible se queda en la misma
-// posicion
+// posicion y muestra el mensaje
 	public static void insertar(Universitario u){
 		poss += 1;
-		if(poss > -1 && poss < MAX){
+		if(poss > -1 && poss < MAX ){
 			personas[poss] = u;
 		} else{
 			poss -= 1;
 			System.out.println(" Imposible insertar en "+ poss);
 		}
 	}
-//metodo que inserta un 
+//metodo que inserta un Universitario en la posicion
+// que el usuario quiera e igual que en el anterior
+// muestra el mensaje pero no se mueve de posicion
 	public static void insertar(Universitario u, int idx){
 		if(idx > -1 && idx < MAX && personas[idx] == null){
 			personas[idx] = u;
