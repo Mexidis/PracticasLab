@@ -13,11 +13,11 @@ public class Alumno extends Universitario{
 
 	}
 
-	public void forEach(){
-		for (Calificacion pos : calificaciones) {
+	// public void forEach(){
+	// 	for (Calificacion pos : calificaciones) {
 			
-		}
-	}
+	// 	}
+	// }
 
 	public void setCalificacion(){
 		for (Calificacion calif : calificaciones) {
