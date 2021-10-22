@@ -9,7 +9,8 @@ public class Tablero{
 	private Tablero(){
 
 	}
-//
+//metodo que muestra el estado del tablero, si contiene algo y 
+//en que posicion esta ese algo
 	public static void mostrar(){
 		System.out.println("* El tablero contiene *");
 		for (Universitario individual : personas) {
@@ -22,7 +23,9 @@ public class Tablero{
 		System.out.print("* * * * * *");
 	}
 
-//
+//metodo que inserte un Universitario en la proxima
+// posicion y de no ser posible se queda en la misma
+// posicion
 	public static void insertar(Universitario u){
 		poss += 1;
 		if(poss > -1 && poss < MAX){
@@ -32,7 +35,7 @@ public class Tablero{
 			System.out.println(" Imposible insertar en "+ poss);
 		}
 	}
-//
+//metodo que inserta un 
 	public static void insertar(Universitario u, int idx){
 		if(idx > -1 && idx < MAX && personas[idx] == null){
 			personas[idx] = u;
