@@ -1,5 +1,7 @@
 package edu.uaz.ingsoft.appcovid.universitarios.alumnos;
 import edu.uaz.ingsoft.appcovid.universitarios.*;
+import edu.uaz.ingsoft.appcovid.utils.*;
+
 
 public class Alumno extends Universitario{
 	private static Calificacion[] calificaciones = new Calificacion[5];
@@ -7,10 +9,21 @@ public class Alumno extends Universitario{
 
 	public Alumno(String nombre){
 		super(nombre);
-		if (calificaciones[] <= 10  && calificaciones[] >= 0){
-			this.calificaciones[] = calificaciones[];
-		} else{
-			this.calificaciones[] = Calificacion.CERO;
+		setCalificacion();
+
+	}
+
+	public void setCalificacion(){
+		for (Calificacion calif : calificaciones) {
+			calif = Calificacion.CERO;
+		}
+	}
+
+	public void setCalificacion(Calificacion c, int indice){
+		calificaciones[indice] = c;
+		for (Calificacion pos : calificaciones) {
+			pos += pos;
+			promedio = pos / calificaciones.length;
 		}
 	}
 
