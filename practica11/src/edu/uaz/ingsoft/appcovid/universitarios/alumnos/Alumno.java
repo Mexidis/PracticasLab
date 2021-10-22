@@ -27,7 +27,13 @@ public class Alumno extends Universitario{
 
 	public void setCalificacion(Calificacion c, int indice){
 		calificaciones[indice] = c;
-		S
+		int n = 0;
+		int sumatoria = 0;
+		for (Calificacion pos : calificaciones) {
+			sumatoria += pos.getCalif();
+			n++;
+			promedio = sumatoria / n;
+		}
 	}
 
 	public float getPromedio(){
