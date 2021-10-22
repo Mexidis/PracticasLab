@@ -23,7 +23,7 @@ public class PruebaEnum{
 					case 8: return Calificacion.OCHO;
 					case 9: return Calificacion.NUEVE;
 					case 10: return Calificacion.DIEZ;
-					a.setCalificacion(c, indice);
+					a.setCalificacion(10, 3);
 					System.out.println(a);
 				}
 			}
