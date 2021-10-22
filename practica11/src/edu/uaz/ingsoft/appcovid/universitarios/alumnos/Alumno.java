@@ -2,9 +2,10 @@ package edu.uaz.ingsoft.appcovid.universitarios.alumnos;
 import edu.uaz.ingsoft.appcovid.universitarios.*;
 
 public class Alumno extends Universitario{
-	private int grade;
+	private static Calificacion[] calificaciones = new Calificacion[5];
+	private float promedio;
 
-	public Alumno(String nombre, int grade){
+	public Alumno(String nombre){
 		super(nombre);
 		if (grade <= 10  && grade >= 0){
 			this.grade = grade;
