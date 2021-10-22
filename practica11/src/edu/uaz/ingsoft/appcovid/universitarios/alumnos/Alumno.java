@@ -23,7 +23,7 @@ public class Alumno extends Universitario{
 		calificaciones[indice] = c;
 		int sumatoria = 0;
 		for (Calificacion pos : calificaciones) {
-			return sumatoria = sumatoria + pos;
+			sumatoria = sumatoria + ;
 			promedio = sumatoria / calificaciones.length;
 		}
 	}
@@ -36,7 +36,8 @@ public class Alumno extends Universitario{
 		boolean result = false;
 		if ((o != null) && (o instanceof Alumno)){
 			Alumno student = (Alumno) o;
-			if (super.getNombre() == student.getNombre() && grade == student.grade){
+			if (super.getNombre() == student.getNombre() && 
+				calificaciones[] == student.calificaciones[]){
 				result = true;
 			}
 		}
@@ -45,11 +46,11 @@ public class Alumno extends Universitario{
 
 	public int hashCode(){
 		int hashcode = super.getNombre().hashCode();
-		return hashcode*grade;
+		return hashcode*calificaciones[];
 	}
 
 	public String toString(){
-		return "Alumno "+ super.toString() +"\t"+ grade;
+		return "Alumno "+ super.toString() +"\t"+ calificaciones[];
 	}
 
 }
