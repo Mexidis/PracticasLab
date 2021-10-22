@@ -31,7 +31,14 @@ public class Alumno extends Universitario{
 	}
 
 	public float getPromedio(){
-
+		int n = 0;
+		int sumatoria = 0;
+		for (Calificacion pos : calificaciones) {
+			sumatoria += pos.getCalif();
+			n++;
+			promedio = sumatoria / n;
+		}
+		return promedio;
 	}
 
 	// public Alumno(String nombre){
