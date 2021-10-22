@@ -21,11 +21,11 @@ public class Alumno extends Universitario{
 
 	public void setCalificacion(Calificacion c, int indice){
 		calificaciones[indice] = c;
-		int sumatoria = 0;
-		for (Calificacion pos : calificaciones) {
-			sumatoria = sumatoria + ;
-			promedio = sumatoria / calificaciones.length;
-		}
+
+	}
+
+	public float getPromedio(){
+		
 	}
 
 	// public Alumno(String nombre){
