@@ -26,7 +26,7 @@ public class PruebaAbstract {
 				a2.llenarCalificaciones();
 			}
 			System.out.println(posic);
-			//posic.realizarTutoria();
+			posic.realizarTutoria();
 			posic.getNota();
 		}
 	}
