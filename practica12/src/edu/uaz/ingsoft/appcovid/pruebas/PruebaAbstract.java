@@ -14,12 +14,13 @@ public class PruebaAbstract {
 			new Alumno("Patrick"),
 		};
 		for (Universitario posic: universitarios) {
-			if (posic == universitarios[2] || universitarios[3]){
-				posic.llenarCalificaciones();
-			}
 			System.out.println(posic);
-			posic.realizarTutoria();
-			posic.getNota();
+			// if (universitarios[] == posic){
+			// 	//posic.llenarCalificaciones();
+			// }
+			// System.out.println(posic);
+			// posic.realizarTutoria();
+			// posic.getNota();
 		}
 	}
 }
