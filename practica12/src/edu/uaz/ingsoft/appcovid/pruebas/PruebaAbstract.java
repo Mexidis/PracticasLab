@@ -6,18 +6,22 @@ import edu.uaz.ingsoft.appcovid.utils.*;
 
 public class PruebaAbstract {
 	public static void main(String[] args) {
+		Maestro m1 = new Maestro("Carolina", 10000f);
+		Maestro m2 = new Maestro("Jorge",20000f);
+		Alumno a1 = new Alumno("Miriam");
+		Alumno a2 = new Alumno("Patrick");
 		Universitario[] universitarios = {
-			// new Universitario("Aldo"), 
-			new Maestro("Carolina", 10000f),
-			new Maestro("Jorge",20000f),
-			new Alumno("Miriam"),
-			new Alumno("Patrick"),
+			m1, m2, a1, a2
+			// new Maestro("Carolina", 10000f),
+			// new Maestro("Jorge",20000f),
+			// new Alumno("Miriam"),
+			// new Alumno("Patrick"),
 		};
 		for (Universitario posic: universitarios) {
 			System.out.println(posic);
-			if (posic == universitarios[2] || posic == universitarios[3]){
+			if (posic == a1){
 				System.out.println(posic);
-				posic.llenarCalificaciones(universitarios);
+				a1.llenarCalificaciones();			
 			}
 			// System.out.println(posic);
 			// posic.realizarTutoria();
