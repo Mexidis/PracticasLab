@@ -18,6 +18,15 @@ public class Maestro extends Universitario{
 		this(nombre, 1000.00f);
 	}
 
+	public void realizarTutoria(){
+		System.out.println("Imparte Tutoria");
+	}
+
+	public void getNota(){
+		System.out.println("El docente establece las notas "+
+			"de los alumnos");
+	}
+
 	// public float setSueldo(float sueldo){
 	// 	if (sueldo <= 20000.00f && sueldo >= 100.00f){
 	// 		return sueldo;
