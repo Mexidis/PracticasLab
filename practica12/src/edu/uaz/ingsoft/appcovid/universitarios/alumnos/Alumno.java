@@ -37,7 +37,12 @@ public class Alumno extends Universitario implements Tutorias{
 	}
 
 	public void realizarTutoria(){
-		System.out.println("Recibe tutorias");
+		System.out.println(getCalificaciones());
+		System.out.println(getPromedio());
+	}
+
+	public void getNota(){
+		System.out.println(getCalificaciones());
 		System.out.println(getCalificaciones());
 	}
 
