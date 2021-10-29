@@ -3,7 +3,7 @@ import edu.uaz.ingsoft.appcovid.universitarios.*;
 import edu.uaz.ingsoft.appcovid.utils.*;
 
 public class Alumno extends Universitario implements Tutorias{
-	private static Calificacion[] calificaciones = new Calificacion[5];
+	private Calificacion[] calificaciones = new Calificacion[5];
 	private float promedio;
 
 	public Alumno(String nombre){
@@ -25,27 +25,11 @@ public class Alumno extends Universitario implements Tutorias{
 		return promedio;
 	}
 	
-	public void setCalificacion(){
-		for (int i = 0; i < calificaciones.length; i++) {
-			calificaciones[i] = Calificacion.CERO;
-		}
-	}
-
-	public void setCalificacion(Calificacion c, int indice){
-		calificaciones[indice] = c;
-		promedio = getPromedio();
-	}
-
-	public void realizarTutoria(){
-		System.out.println("Recibe Tutorias");
-		System.out.println(getCalificaciones());
-	}
-
 	public void getNota(){
-		System.out.println(getCalificaciones());
+		System.out.println(calificaciones);
 		System.out.println(getPromedio());
 	}
-
+	
 	private static Calificacion getCalifAleatoria(){
 		int rand = (int)(Math.random()*10);
 			switch (rand) {
@@ -63,6 +47,24 @@ public class Alumno extends Universitario implements Tutorias{
 			}
 		return Calificacion.CERO;					
 	}
+
+	public void setCalificacion(){
+		for (int i = 0; i < calificaciones.length; i++) {
+			calificaciones[i] = Calificacion.CERO;
+		}
+	}
+
+	public void setCalificacion(Calificacion c, int indice){
+		calificaciones[indice] = c;
+		promedio = getPromedio();
+	}
+
+	public void realizarTutoria(){
+		System.out.println("Recibe Tutorias");
+		System.out.println(getCalificaciones());
+	}
+
+
 
 	public void llenarCalificaciones(){
 		for (int i = 0 ; i < 5 ; i++) {

@@ -18,14 +18,16 @@ public class PruebaAbstract {
 			// new Alumno("Patrick"),
 		};
 		for (Universitario posic: universitarios) {
-			System.out.println(posic);
 			if (posic == a1){
 				System.out.println(posic);
 				a1.llenarCalificaciones();			
+			} else if (posic == a2) {
+				System.out.println(posic);
+				a2.llenarCalificaciones();
 			}
-			// System.out.println(posic);
-			// posic.realizarTutoria();
-			// posic.getNota();
+			System.out.println(posic);
+			posic.realizarTutoria();
+			posic.getNota();
 		}
 	}
 }

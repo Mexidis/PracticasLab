@@ -6,13 +6,18 @@ import edu.uaz.ingsoft.appcovid.utils.*;
 public class PruebaEnum{
 	public static void main(String[] args) {
 		Alumno a = new Alumno("Patrick");
+		Alumno b = new Alumno("viri");
 		for (int i = 0 ; i < 5 ; i++) {
 			// System.out.println(i);
 			// int calificacion = getCalifAleatoria().getCalif();
 			// System.out.println(calificacion);
 			a.setCalificacion(getCalifAleatoria(), i);
+			b.setCalificacion(getCalifAleatoria(), i);
+
 		}
 		System.out.println(a);
+		System.out.println(b);
+
 		//a.toString();
 }
 			private static Calificacion getCalifAleatoria(){
