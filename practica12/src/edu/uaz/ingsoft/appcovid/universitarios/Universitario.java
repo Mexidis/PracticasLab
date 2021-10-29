@@ -1,6 +1,7 @@
 package edu.uaz.ingsoft.appcovid.universitarios;
+import edu.uaz.ingsoft.appcovid.utils.*;
 
-public abstract class Universitario{
+public abstract class Universitario implements Tutorias{
 	private String nombre;
 
 	public Universitario(String nombre){

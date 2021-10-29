@@ -63,7 +63,12 @@ public class Alumno extends Universitario implements Tutorias{
 
 	public void realizarTutoria(){
 		System.out.println("Recibe Tutorias");
-		System.out.println(getCalificaciones());
+		String listadoCalif = "";
+		String promedio;
+		for (Calificacion pos : calificaciones) {
+			listadoCalif += pos.getCalif() +" ";
+		}
+		System.out.println(listadoCalif); 
 	}
 
 	public void llenarCalificaciones(){
