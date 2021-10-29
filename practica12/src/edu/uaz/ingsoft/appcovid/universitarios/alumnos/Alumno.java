@@ -65,7 +65,6 @@ public class Alumno extends Universitario implements Tutorias{
 	}
 
 	public void llenarCalificaciones(){
-		//Calificacion[] llenarCalfs;
 		for (int i = 0 ; i < 5 ; i++) {
 			setCalificacion(getCalifAleatoria(), i);
 		}

@@ -15,9 +15,10 @@ public class PruebaAbstract {
 		};
 		for (Universitario posic: universitarios) {
 			System.out.println(posic);
-			// if (universitarios[] == posic){
-			// 	//posic.llenarCalificaciones();
-			// }
+			if (posic == universitarios[2] || posic == universitarios[3]){
+				System.out.println(posic);
+				posic.llenarCalificaciones(universitarios);
+			}
 			// System.out.println(posic);
 			// posic.realizarTutoria();
 			// posic.getNota();
