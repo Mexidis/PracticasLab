@@ -19,14 +19,14 @@ public class PruebaAbstract {
 		};
 		for (Universitario posic: universitarios) {
 			if (posic == a1){
-				System.out.println(posic);
+				//System.out.println(posic);
 				a1.llenarCalificaciones();			
 			} else if (posic == a2) {
-				System.out.println(posic);
+				//System.out.println(posic);
 				a2.llenarCalificaciones();
 			}
 			System.out.println(posic);
-			posic.realizarTutoria();
+			//posic.realizarTutoria();
 			posic.getNota();
 		}
 	}

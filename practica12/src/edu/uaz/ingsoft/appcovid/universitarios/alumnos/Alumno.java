@@ -26,7 +26,9 @@ public class Alumno extends Universitario implements Tutorias{
 	}
 	
 	public void getNota(){
-		System.out.println(calificaciones);
+		for (Calificacion posi : calificaciones) {
+			System.out.println(posi);
+		}
 		System.out.println(getPromedio());
 	}
 	
@@ -63,8 +65,6 @@ public class Alumno extends Universitario implements Tutorias{
 		System.out.println("Recibe Tutorias");
 		System.out.println(getCalificaciones());
 	}
-
-
 
 	public void llenarCalificaciones(){
 		for (int i = 0 ; i < 5 ; i++) {
