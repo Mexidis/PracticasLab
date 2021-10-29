@@ -72,7 +72,7 @@ public class Alumno extends Universitario implements Tutorias{
 	}
 
 	public void llenarCalificaciones(){
-		for (int i = 0 ; i < 5 ; i++) {
+		for (int i = 0 ; i < calificaciones.length ; i++) {
 			setCalificacion(getCalifAleatoria(), i);
 		}
 	}

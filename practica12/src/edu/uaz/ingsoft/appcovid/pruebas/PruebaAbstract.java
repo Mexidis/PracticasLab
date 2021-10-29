@@ -12,11 +12,8 @@ public class PruebaAbstract {
 		Alumno a2 = new Alumno("Patrick");
 		Universitario[] universitarios = {
 			m1, m2, a1, a2
-			// new Maestro("Carolina", 10000f),
-			// new Maestro("Jorge",20000f),
-			// new Alumno("Miriam"),
-			// new Alumno("Patrick"),
 		};
+		
 		for (Universitario posic: universitarios) {
 			if (posic == a1){
 				//System.out.println(posic);
