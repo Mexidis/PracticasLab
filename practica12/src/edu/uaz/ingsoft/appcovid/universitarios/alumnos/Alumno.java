@@ -2,8 +2,7 @@ package edu.uaz.ingsoft.appcovid.universitarios.alumnos;
 import edu.uaz.ingsoft.appcovid.universitarios.*;
 import edu.uaz.ingsoft.appcovid.utils.*;
 
-
-public class Alumno extends Universitario{
+public class Alumno extends Universitario implements Tutorias{
 	private static Calificacion[] calificaciones = new Calificacion[5];
 	private float promedio;
 
@@ -34,7 +33,12 @@ public class Alumno extends Universitario{
 
 	public void setCalificacion(Calificacion c, int indice){
 		calificaciones[indice] = c;
-		//promedio = getPromedio();
+		promedio = getPromedio();
+	}
+
+	public void realizarTutoria(){
+		System.out.println("Recibe tutorias");
+		System.out.println(getCalificaciones());
 	}
 
 	public boolean equals(Object o){
@@ -45,9 +49,6 @@ public class Alumno extends Universitario{
 				Calificacion[] calificacionesStudent = student.getCalificaciones();
 				for (int i = 0; i < calificaciones.length; i++){
 					if(calificaciones[i].equals(calificacionesStudent[i])){
-						// System.out.println(i);
-						// System.out.println(calificaciones[i]);
-						// System.out.println(calificacionesStudent[i]);
 						result = true;
 					} else {
 						result = false;	
@@ -81,5 +82,4 @@ public class Alumno extends Universitario{
 		promedio = String.valueOf(getPromedio());
 		return alumno + listadoCalif +"  "+ promedio;
 	}
-
 }
