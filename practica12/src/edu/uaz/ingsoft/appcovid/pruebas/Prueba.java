@@ -6,12 +6,12 @@ import edu.uaz.ingsoft.appcovid.universitarios.alumnos.*;
 public class Prueba{
 	public static void main(String[] args) {
 		Universitario[] personas = {
-			new Universitario("Valeria"), 
-			new Maestro("Federico", 5f),
-			new Alumno("Hanna",80),
-			new Universitario("Valeria"),
-			new Maestro("Federico", 1000f),
-			new Alumno("Hanna", 5)
+			new Universitario("Valeria"); 
+			new Maestro("Federico", 5f);
+			new Alumno("Hanna",80);
+			new Universitario("Valeria");
+			new Maestro("Federico", 1000f);
+			new Alumno("Hanna", 5);
 		};
 
 		int i = 0;
