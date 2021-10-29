@@ -26,10 +26,11 @@ public class Alumno extends Universitario implements Tutorias{
 	}
 	
 	public void getNota(){
-		for (Calificacion posi : calificaciones) {
-			System.out.println(posi);
+		String listadoCalif = "";
+		for (Calificacion pos : calificaciones) {
+			listadoCalif += pos.getCalif() +" ";
 		}
-		System.out.println(getPromedio());
+		System.out.println("  "+ listadoCalif +" "+getPromedio());
 	}
 	
 	private static Calificacion getCalifAleatoria(){
@@ -64,11 +65,10 @@ public class Alumno extends Universitario implements Tutorias{
 	public void realizarTutoria(){
 		System.out.println("Recibe Tutorias");
 		String listadoCalif = "";
-		String promedio;
 		for (Calificacion pos : calificaciones) {
 			listadoCalif += pos.getCalif() +" ";
 		}
-		System.out.println(listadoCalif); 
+		System.out.println("  "+ listadoCalif); 
 	}
 
 	public void llenarCalificaciones(){
