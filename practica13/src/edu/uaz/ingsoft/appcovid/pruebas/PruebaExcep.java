@@ -16,6 +16,12 @@ public class PruebaExcep {
 			System.out.print(te +" "+te.getIndex());
 		}
 		Tablero.mostrar();
-		Tablero.getPersonas();
+
+		Universitario[] arregloPersonas = Tablero.getPersonas();
+		for (Universitario univ: arregloPersonas) {
+			if (univ == Alumno) {
+				
+			}
+		}
 	}
 }
