@@ -33,17 +33,18 @@ public class Tablero{
 			personas[poss] = u;
 		} else{
 			poss -= 1;
-			System.out.println(" Imposible insertar en "+ poss);
+			throw new TableroException(" Imposible insertar en ", poss);
 		}
 	}
 //metodo que inserta un Universitario en la posicion
 // que el usuario quiera e igual que en el anterior
 // muestra el mensaje pero no se mueve de posicion
-	public static void insertar(Universitario u, int idx){
+	public static void insertar(Universitario u, int idx)
+		throws TableroException{
 		if(idx > -1 && idx < MAX && personas[idx] == null){
 			personas[idx] = u;
 		} else{
-			System.out.println("Imposible insertar en "+ idx);
+			throw new TableroException(" Imposible insertar en ", poss);
 		}
 	}
 
