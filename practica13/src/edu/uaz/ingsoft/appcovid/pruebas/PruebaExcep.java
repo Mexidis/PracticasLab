@@ -13,7 +13,7 @@ public class PruebaExcep {
 			Tablero.insertar(new Alumno("Hanna"));
 			Tablero.insertar(new Alumno("Miriam"));
 		} catch (TableroException te){
-			System.out.print(te +" "+te.getIndex());
+			System.out.print(te +" "+ te.getIndex());
 		}
 
 		Tablero.mostrar();
@@ -32,14 +32,20 @@ public class PruebaExcep {
 
 		for (int i = 0; i<10 ; i++) {
 			int rand = (int)(Math.random()*20);
-			try{
-				if (i % 2 == 0) {
+			if (i % 2 == 0) {
+				try{
 					Tablero.insertar(u1, rand);
 					Tablero.insertar(u2, rand + 1);
-				} else if (i % 2 != 0) {
-					Tablero.borrar(rand);
+				} catch (TableroException te){
+					System.out.print(te +" "+ te.getIndex());
+				}	
+			} else if (i % 2 != 0) {
+				try{	
+					Tablero.borrar();
+				} catch (TableroException te){
+					System.out.print(te +" "+ te.getIndex());	
 				}
-			}	
+			}
 		}
 		Tablero.mostrar();
 	}
