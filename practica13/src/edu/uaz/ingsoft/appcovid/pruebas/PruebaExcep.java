@@ -13,7 +13,9 @@ public class PruebaExcep {
 			Tablero.insertar(new Alumno("Hanna"));
 			Tablero.insertar(new Alumno("Miriam"));
 		} catch (TableroException te){
-			
+			System.out.print(te +" "+te.getIndex());
 		}
+		Tablero.mostrar();
+		Tablero.getPersonas();
 	}
 }

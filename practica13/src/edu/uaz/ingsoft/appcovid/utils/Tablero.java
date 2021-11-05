@@ -8,7 +8,7 @@ public class Tablero{
 
 	private Tablero(){}
 
-	public Universitario[] getPersonas(){
+	public static Universitario[] getPersonas(){
 		return personas;
 	}
 //metodo que muestra el estado del tablero, si contiene algo y 
