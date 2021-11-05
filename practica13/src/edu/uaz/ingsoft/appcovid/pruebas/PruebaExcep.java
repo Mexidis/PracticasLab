@@ -13,7 +13,7 @@ public class PruebaExcep {
 			Tablero.insertar(new Alumno("Hanna"));
 			Tablero.insertar(new Alumno("Miriam"));
 		} catch (TableroException te){
-			System.out.print(te +" "+ te.getIndex());
+			System.out.println(te +" "+ te.getIndex());
 		}
 
 		Tablero.mostrar();
@@ -37,13 +37,13 @@ public class PruebaExcep {
 					Tablero.insertar(u1, rand);
 					Tablero.insertar(u2, rand + 1);
 				} catch (TableroException te){
-					System.out.print(te +" "+ te.getIndex());
+					System.out.println(te +" "+ te.getIndex());
 				}	
 			} else if (i % 2 != 0) {
 				try{	
 					Tablero.borrar();
 				} catch (TableroException te){
-					System.out.print(te +" "+ te.getIndex());	
+					System.out.println(te +" "+ te.getIndex());	
 				}
 			}
 		}

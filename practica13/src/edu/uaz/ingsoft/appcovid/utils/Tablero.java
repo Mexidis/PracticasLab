@@ -14,7 +14,7 @@ public class Tablero{
 //metodo que muestra el estado del tablero, si contiene algo y 
 //en que posicion esta ese algo
 	public static void mostrar(){
-		System.out.println("* El tablero contiene *");
+		System.out.println("\n* El tablero contiene *");
 		for (Universitario individual : personas) {
 			if(individual == null){
 				System.out.println("-");
@@ -31,7 +31,7 @@ public class Tablero{
 	public static void insertar(Universitario u)
 		throws TableroException{
 		poss += 1;
-		if(poss > -1 && poss < MAX ){
+		if(poss > -1 && poss < MAX  && personas[poss] == null){
 			personas[poss] = u;
 		} else{
 			poss -= 1;
@@ -48,7 +48,7 @@ public class Tablero{
 			personas[idx] = u;
 		} else{
 			throw new TableroException(" Imposible insertar en "
-				, poss);
+				, idx);
 		}
 	}
 
@@ -69,7 +69,7 @@ public class Tablero{
 			personas[idx] = null;
 		} else{
 			throw new TableroException(" Imposible borrar en "
-				, poss);
+				, idx);
 		}
 	}
 }
