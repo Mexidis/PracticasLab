@@ -28,3 +28,4 @@ public class PruebaAbstract {
 		}
 	}
 }
+//Corregir las validaciones del ciclo a un "instanceOf"

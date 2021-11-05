@@ -15,13 +15,32 @@ public class PruebaExcep {
 		} catch (TableroException te){
 			System.out.print(te +" "+te.getIndex());
 		}
+
 		Tablero.mostrar();
 
 		Universitario[] arregloPersonas = Tablero.getPersonas();
 		for (Universitario univ: arregloPersonas) {
-			if (univ == Alumno) {
-				
+			if (univ instanceof Alumno) {
+				((Alumno)univ).llenarCalificaciones();
 			}
 		}
+		Tablero.mostrar();
+
+		Maestro u1 = new Maestro("Patrick", 100f);
+		Alumno u2 = new Alumno("Sarahi");
+		u2.llenarCalificaciones();
+
+		for (int i = 0; i<10 ; i++) {
+			int rand = (int)(Math.random()*20);
+			try{
+				if (i % 2 == 0) {
+					Tablero.insertar(u1, rand);
+					Tablero.insertar(u2, rand + 1);
+				} else if (i % 2 != 0) {
+					Tablero.borrar(rand);
+				}
+			}	
+		}
+		Tablero.mostrar();
 	}
 }
