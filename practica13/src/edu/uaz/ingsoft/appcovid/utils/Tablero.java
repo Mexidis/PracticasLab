@@ -6,8 +6,10 @@ public class Tablero{
 	public static final int MAX = 5;
 	private static Universitario[] personas = new Universitario[MAX];
 
-	private Tablero(){
+	private Tablero(){}
 
+	public Universitario[] getPersonas(){
+		return personas;
 	}
 //metodo que muestra el estado del tablero, si contiene algo y 
 //en que posicion esta ese algo
@@ -33,7 +35,8 @@ public class Tablero{
 			personas[poss] = u;
 		} else{
 			poss -= 1;
-			throw new TableroException(" Imposible insertar en ", poss);
+			throw new TableroException(" Imposible insertar en "
+				, poss);
 		}
 	}
 //metodo que inserta un Universitario en la posicion
@@ -44,26 +47,29 @@ public class Tablero{
 		if(idx > -1 && idx < MAX && personas[idx] == null){
 			personas[idx] = u;
 		} else{
-			throw new TableroException(" Imposible insertar en ", poss);
+			throw new TableroException(" Imposible insertar en "
+				, poss);
 		}
 	}
 
-	public static void borrar(){
+	public static void borrar()
+		throws TableroException{
 		if(poss > -1 && poss < MAX){
 			personas[poss] = null;
 			poss -= 1;
 		} else{
-			System.out.println("Imposible borrar en "+ poss);
+			throw new TableroException(" Imposible borrar en "
+				, poss);
 		}
 	}
 
-	public static void borrar(int idx){
+	public static void borrar(int idx)
+		throws TableroException{
 		if(idx > -1 && idx < MAX && personas[idx] != null){
 			personas[idx] = null;
 		} else{
-			System.out.println("Imposible borrar en "+ idx);
+			throw new TableroException(" Imposible borrar en "
+				, poss);
 		}
 	}
-
-
 }
