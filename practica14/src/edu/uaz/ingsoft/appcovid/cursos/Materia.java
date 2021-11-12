@@ -1,3 +1,4 @@
+package edu.uaz.ingsoft.appcovid.cursos;
 public class Materia implements Comparable<Materia> {
 	private final String clase;
 	private int semestre;

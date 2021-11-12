@@ -11,6 +11,12 @@ public class Tablero{
 	public static Universitario[] getPersonas(){
 		return personas;
 	}
+
+	public static int getAleatorio(int limit){
+		int numRandom = (int)(Math.random()*limit);
+		return numRandom;
+	}
+
 //metodo que muestra el estado del tablero, si contiene algo y 
 //en que posicion esta ese algo
 	public static void mostrar(){
