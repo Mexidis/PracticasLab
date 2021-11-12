@@ -4,7 +4,7 @@ public class Materia implements Comparable<Materia> {
 	private int semestre;
 	private char grupo;
 
-	public Materia(String clase, int semestre, char grupo){
+	public Materia(String clase){
 		this.clase = clase;
 		this.semestre = 1;
 		this.grupo = 'A';
@@ -23,7 +23,7 @@ public class Materia implements Comparable<Materia> {
 	}
 
 	public void setSemestre(int sem){
-		if (sem <= 1 && sem >= 16) {
+		if (sem >= 1 && sem <= 16) {
 			semestre = sem;
 		}
 	}
@@ -41,9 +41,9 @@ public class Materia implements Comparable<Materia> {
 		if ((m.semestre - semestre) != 0){
 			return m.semestre - semestre;
 		}
-		if ((int)(m.grupo) == (int)(grupo)){
-			return (int)(grupo) - (int)(m.grupo);
-		}
+		// if ((int)(m.grupo) == (int)(grupo)){
+		// 	return (int)(grupo) - (int)(m.grupo);
+		// }
 		return (int)(m.grupo) - (int)(grupo);
 	}
 	public String toString(){
