@@ -1,22 +1,31 @@
 package edu.uaz.ingsoft.appcovid.pruebas;
-import edu.uaz.ingsoft.appcovid.universitarios.*;
-import edu.uaz.ingsoft.appcovid.universitarios.maestros.*;
-import edu.uaz.ingsoft.appcovid.universitarios.alumnos.*;
-import edu.uaz.ingsoft.appcovid.utils.*;
+import edu.uaz.ingsoft.appcovid.cursos.Materia;
 import java.util.LinkedList;
 import java.util.TreeSet;
+import java.util.Comparator;
+import java.util.Collections;
 public class PruebaCollect {
-	Materia m1 = new Materia("Programacion");
-	Materia m2 = new Materia("Algoritmos");
-	Materia m3 = new Materia("S. Operativos");
-	Materia m4 = new Materia("Algoritmos");
-	Materia m5 = new Materia("Programacion");
+	public static void main(String[] args) {
 
-	LinkedList <Materia> lista = new ArrayList <Materia> ();
-	lista.add(m1);
-	lista.add(m2); 
-	lista.add(m3);
-	lista.add(m4);
-	lista.add(m5); 
+		LinkedList <Materia> lista = new ArrayList <Materia> ();
+		lista.add(new Materia("Programacion"));
+		lista.add(new Materia("Algoritmos"));
+		lista.add(new Materia("S. Operativos")); 
+		lista.add(new Materia("Algoritmos"));
+		lista.add(new Materia("Programacion"));
 
-	TreeSet<Materia> ts = new TreeSet<Materia>();
+		TreeSet<Materia> tree1 = new TreeSet<Materia>();
+		tree1.add(new Materia("Programacion"));
+		tree1.add(new Materia("Algoritmos"));
+		tree1.add(new Materia("S. Operativos")); 
+		tree1.add(new Materia("Algoritmos"));
+		tree1.add(new Materia("Programacion"));
+		
+		TreeSet<Materia> tree2 = new TreeSet<Materia>(new CmpSem());
+		tree2.add(new Materia("Programacion"));
+		tree2.add(new Materia("Algoritmos"));
+		tree2.add(new Materia("S. Operativos")); 
+		tree2.add(new Materia("Algoritmos"));
+		tree2.add(new Materia("Programacion"));
+	}
+}
