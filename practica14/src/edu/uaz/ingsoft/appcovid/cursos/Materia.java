@@ -41,8 +41,11 @@ public class Materia implements Comparable<Materia> {
 			return m.semestre - semestre;
 		}
 		if ((int)(m.grupo) == (int)(grupo)){
-			return (int)(m.grupo) - (int)(grupo);
+			return (int)(grupo) - (int)(m.grupo);
 		}
-		
+		return (int)(m.grupo) - (int)(grupo);
+	}
+	public String toString(){
+		return "{"+clase +" "+ semestre +"\t"+ grupo+"}";
 	}
 }
