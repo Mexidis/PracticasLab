@@ -1,12 +1,14 @@
-package src.com.estadistica.stata;
-import java.io.ArrayList;
+package src.com.estadistica.stata.archivos;
+import java.util.ArrayList;
+import java.io.File;
+
 
 public class Acciones{
-	private static ArrayList<Municipio> municipios = new ArrayList();
+	private static ArrayList<Municipio> municipios;
 
 	public boolean esArchivo(String s){
-		
-		if(s.exists() && s.isDirectory()){
+		File file = new File(s);
+		if(file.exists() && file.isDirectory()){
 			return true;			
 		}
 		return false;
