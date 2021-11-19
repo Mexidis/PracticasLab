@@ -12,7 +12,7 @@ public class Municipio{
 	}
 
 	public short getId(){
-		return getId;
+		return id;
 	}
 	public String getName(){
 		return name;
@@ -22,6 +22,6 @@ public class Municipio{
 	}
 
 	public String toString(){
-		return "{"+id+"\t"+name+"\t"+population+"}"
+		return "{"+id+"\t"+name+"\t"+population+"}";
 	}
 }
