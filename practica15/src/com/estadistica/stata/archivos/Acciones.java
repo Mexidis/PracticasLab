@@ -63,9 +63,9 @@ public class Acciones{
 					totalPopulation += entidadActual.getPopulation();
 				}
 			}
-			out.write(entidadActual.totalPopulation);
-
-
+			out.write("Total de poblacion en los municipios: "+
+				totalPopulation);
+			out.close();
 		} catch (FileNotFoundException e1){
 			System.err.println("File not found: "+file);
 		} catch (IOException e2){
@@ -73,3 +73,4 @@ public class Acciones{
 		}
 	}
 }
+//Práctica15 11:
