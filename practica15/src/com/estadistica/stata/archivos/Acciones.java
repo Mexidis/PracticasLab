@@ -1,7 +1,9 @@
 package com.estadistica.stata.archivos;
 import java.util.ArrayList;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -56,11 +58,13 @@ public class Acciones{
 		try{
 			BufferedWriter out = new BufferedWriter(new FileWriter(file));
 			for (Municipio entidadActual : municipios) {
-				if (entidadActual.getNombre().charAt(0) == c) {
-					
+				if (entidadActual.getName().charAt(0) == c) {
+					out.write(entidadActual.toString());
+					totalPopulation += entidadActual.getPopulation();
 				}
-				out.write(entidadActual.toString());
 			}
+			out.write(entidadActual.totalPopulation);
+
 
 		} catch (FileNotFoundException e1){
 			System.err.println("File not found: "+file);
