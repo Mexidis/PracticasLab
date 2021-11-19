@@ -20,14 +20,16 @@ public class Acciones{
 
 	public static void procesar(String s){
 		File file = new File(s);
-		municipios = new ArrayList<Municipio>(file);
+		municipios = new ArrayList<Municipio>();
 		try{
-			BufferedReader input = new BufferedReader(new FileReader()); 
-			String s;
-			s = input.readLine();
-			while (s != null){
-				System.out.println(s);
-				s = input.readLine();
+			BufferedReader input = new BufferedReader(new FileReader(file)); 
+			String line;
+			line = input.readLine();
+			while (line != null){
+				line.split(";", 3);
+				line = input.readLine();
+
+				municipios.add(new Municipio(id, datos[1], pupulation));
 			}
 			input.close();
 		} catch (FileNotFoundException e1){
