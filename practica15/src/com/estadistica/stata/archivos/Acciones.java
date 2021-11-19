@@ -50,5 +50,16 @@ public class Acciones{
 		if (municipios == null){
 			return;
 		}
+		int totalPopulation = 0;
+		File file = new File(s);
+		municipios = new ArrayList<Municipio>();
+		try{
+			InputStreamReader isr = new InputStreamReader (System)
+			
+		} catch (FileNotFoundException e1){
+			System.err.println("File not found: "+file);
+		} catch (IOException e2){
+			e2.printStackTrace();
+		}
 	}
 }
