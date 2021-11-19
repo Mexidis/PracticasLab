@@ -26,10 +26,13 @@ public class Acciones{
 			String line;
 			line = input.readLine();
 			while (line != null){
-				line.split(";", 3);
 				line = input.readLine();
+				String[] arrayLine = line.split(";", 3);
+				short posicion_1 = Short.parseShort(arrayLine[0]);
+				String posicion_2 = arrayLine[1];
+				int posicion_3 = Integer.parseInt(arrayLine[2]);
 
-				municipios.add(new Municipio(id, datos[1], pupulation));
+				municipios.add(new Municipio(posicion_1, posicion_2, posicion_3));
 			}
 			input.close();
 		} catch (FileNotFoundException e1){
