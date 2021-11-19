@@ -41,8 +41,14 @@ public class Acciones{
 		}
 	}
 
-	public static char getCharAleat(int limit){
-		int numRandom = (int)(Math.random()*limit);
-		return numRandom;
+	public static char getCharAleat(){
+		char charRandom = (char)((Math.random()*40)+65);
+		return charRandom;
+	}
+
+	public static void guardarDatos(String s, char c){
+		if (municipios == null){
+			return;
+		}
 	}
 }
