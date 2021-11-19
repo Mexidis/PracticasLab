@@ -26,13 +26,12 @@ public class Acciones{
 			String line;
 			line = input.readLine();
 			while (line != null){
-				line = input.readLine();
 				String[] arrayLine = line.split(";", 3);
 				short posicion_1 = Short.parseShort(arrayLine[0]);
 				String posicion_2 = arrayLine[1];
 				int posicion_3 = Integer.parseInt(arrayLine[2]);
-
 				municipios.add(new Municipio(posicion_1, posicion_2, posicion_3));
+				line = input.readLine();
 			}
 			input.close();
 		} catch (FileNotFoundException e1){
@@ -40,5 +39,10 @@ public class Acciones{
 		} catch (IOException e2){
 			e2.printStackTrace();
 		}
+	}
+
+	public static char getCharAleat(int limit){
+		int numRandom = (int)(Math.random()*limit);
+		return numRandom;
 	}
 }
