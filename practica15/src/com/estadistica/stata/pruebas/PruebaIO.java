@@ -1,6 +1,9 @@
 package com.estadistica.stata.pruebas;
 import com.estadistica.stata.archivos.*;
+import java.io.FileReader;
 import java.io.File;
+import java.util.ArrayList;
+
 
 public class PruebaIO {
 	public static void main(String[] args) {
@@ -12,11 +15,12 @@ public class PruebaIO {
 		String path = home.getAbsolutePath()+
 			System.getProperty("file.separator");
 		String[] contenido = home.list();
-		// for (Municipio entidadActual : municipios) {
-		// 	if (entidadActual.isFile() && entidadActual == "datos.info") {
-		// 		Acciones.procesar(path+entidadActual);
-		// 	}
-		// }
-		municipios = Acciones.getMunicipios();
+		for (String posisActual : contenido) {
+			if () {
+				Acciones.procesar();
+			}
+		}
+		//municipios = Acciones.getMunicipios();
+
 	}
 }
