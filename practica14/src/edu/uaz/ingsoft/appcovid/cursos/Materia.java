@@ -6,8 +6,8 @@ public class Materia implements Comparable<Materia> {
 
 	public Materia(String clase){
 		this.clase = clase;
-		this.semestre = 1;
-		this.grupo = 'A';
+		semestre = 1;
+		grupo = 'A';
 	}
 
 	public String getClase(){
@@ -47,6 +47,6 @@ public class Materia implements Comparable<Materia> {
 		return (int)(m.grupo) - (int)(grupo);
 	}
 	public String toString(){
-		return "{"+clase +" "+ semestre +"\t"+ grupo+"}";
+		return "{"+clase +"\t"+ semestre +"\t"+ grupo+"}";
 	}
 }

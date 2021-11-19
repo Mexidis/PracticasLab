@@ -5,7 +5,6 @@ import edu.uaz.ingsoft.appcovid.utils.CmpGrupo;
 import edu.uaz.ingsoft.appcovid.utils.Tablero;
 import java.util.LinkedList;
 import java.util.TreeSet;
-import java.util.Comparator;
 import java.util.Collections;
 public class PruebaCollect {
 	public static void main(String[] args) {
