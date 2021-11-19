@@ -43,6 +43,7 @@ public class Acciones{
 
 	public static char getCharAleat(){
 		char charRandom = (char)((Math.random()*40)+65);
+		charRandom = Character.toUpperCase(charRandom);
 		return charRandom;
 	}
 
@@ -52,10 +53,15 @@ public class Acciones{
 		}
 		int totalPopulation = 0;
 		File file = new File(s);
-		municipios = new ArrayList<Municipio>();
 		try{
-			InputStreamReader isr = new InputStreamReader (System)
-			
+			BufferedWriter out = new BufferedWriter(new FileWriter(file));
+			for (Municipio entidadActual : municipios) {
+				if (entidadActual.getNombre().charAt(0) == c) {
+					
+				}
+				out.write(entidadActual.toString());
+			}
+
 		} catch (FileNotFoundException e1){
 			System.err.println("File not found: "+file);
 		} catch (IOException e2){
