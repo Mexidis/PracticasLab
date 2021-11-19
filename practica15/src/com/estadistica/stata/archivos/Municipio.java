@@ -1,4 +1,4 @@
-package src.com.estadistica.stata.archivos;
+package com.estadistica.stata.archivos;
 
 public class Municipio{
 	private short id;
