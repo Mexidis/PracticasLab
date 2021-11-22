@@ -8,7 +8,6 @@ import java.io.FileReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-
 public class Acciones{
 	private static ArrayList<Municipio> municipios;
 
@@ -28,7 +27,7 @@ public class Acciones{
 			String line;
 			line = input.readLine();
 			while (line != null){
-				String[] arrayLine = line.split(";", 3);
+				String[] arrayLine = line.split(";");
 				short posicion_1 = Short.parseShort(arrayLine[0]);
 				String posicion_2 = arrayLine[1];
 				int posicion_3 = Integer.parseInt(arrayLine[2]);
@@ -41,6 +40,13 @@ public class Acciones{
 		} catch (IOException e2){
 			e2.printStackTrace();
 		}
+	}
+
+	public static ArrayList<Municipio> getMunicipios(){
+		if (municipios != null){
+			return municipios;
+		}
+		return new ArrayList<Municipio>();
 	}
 
 	public static char getCharAleat(){
@@ -73,4 +79,3 @@ public class Acciones{
 		}
 	}
 }
-//Práctica15 11:

@@ -3,7 +3,7 @@ import com.estadistica.stata.archivos.*;
 import java.io.FileReader;
 import java.io.File;
 import java.util.ArrayList;
-
+import java.util.Scanner;
 
 public class PruebaIO {
 	public static void main(String[] args) {
@@ -16,11 +16,21 @@ public class PruebaIO {
 			System.getProperty("file.separator");
 		String[] contenido = home.list();
 		for (String posisActual : contenido) {
-			if () {
-				Acciones.procesar();
+			File file = new File(path+posisActual);
+			if (file.isFile() && posisActual.equals("datos.info")) {
+				Acciones.procesar(path+posisActual);
 			}
 		}
-		//municipios = Acciones.getMunicipios();
-
+		ArrayList<Municipio> municipios = Acciones.getMunicipios();
+		System.out.println(municipios);
+		Scanner sc = new Scanner(System.in);
+		String archivoOut;
+		System.out.println("Introduzca el nombre del archivo: ");
+		archivoOut = sc.nextLine();
+		archivoOut = path+archivoOut;
+		char c = Acciones.getCharAleat();
+		System.out.println("Los municipios que inician con "+
+			c+" se guardaran en: "+ archivoOut);
+		Acciones.guardarDatos(archivoOut, c);
 	}
 }

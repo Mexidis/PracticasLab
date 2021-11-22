@@ -22,6 +22,6 @@ public class Municipio{
 	}
 
 	public String toString(){
-		return "{"+id+"\t"+name+"\t"+population+"}";
+		return "{"+id+"\t"+name+"\t"+population+"}\n";
 	}
 }
