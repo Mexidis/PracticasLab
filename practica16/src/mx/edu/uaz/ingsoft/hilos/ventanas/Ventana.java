@@ -16,7 +16,7 @@ public class Ventana extends JFrame{
 
 	public Ventana(){
 		acc = new Acciones(this);
-		setJMenuBar(menuBar);
+		menuBar = new JMenuBar();
 		mnArchivo = new JMenu("Archivo");
 		menuBar.add(mnArchivo);
 		miIniciarHilos = new JMenuItem("Iniciar Hilos");
@@ -33,23 +33,21 @@ public class Ventana extends JFrame{
 				dispose();
 			}
 		});
-		JLabel etiquetaNorte = new JLabel();
+		etiquetaNorte = new JLabel();
 		//" ".add(etiquetaNorte);
-		JLabel etiquetaSur = new JLabel();
+		etiquetaSur = new JLabel();
 		//" ".add(etiquetaSur);
+		setJMenuBar(menuBar);
 	}
 
 	public void mostrarVentana(){
-		setLayout(new FlowLayout());
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		add(menuBar);
-		add(mnArchivo);
-		add(miIniciarHilos);
-		add(miSalir);
+		// add(mnArchivo);
+		// add(miIniciarHilos);
+		// add(miSalir);
 		add(etiquetaNorte, BorderLayout.NORTH);
 		add(etiquetaSur, BorderLayout.SOUTH);
 		setSize(800,200);
-		pack();
 		setVisible(true);
 	}
 		
