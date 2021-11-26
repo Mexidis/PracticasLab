@@ -10,19 +10,19 @@ public class Elemento extends Thread {
 	}
 
 	public void run(){
-		String out;
-		String letraDeLaEtiqueta = String.valueOf(c);
-		out.setText(letraDeLaEtiqueta);
+		String out = "";
+		etiqueta.setText(String.valueOf(c));
 		for (int i = 0; i < 30 ; i++) {
-			
-			//pendiente
+			out += c;
+			etiqueta.setText(out);
 			try{
                 Thread.sleep(500);
 			} catch (InterruptedException e) {
             // ignore it
             }
 		}
-        //out = etiqueta "Finalizado" 
+		out += "Finalizado";
+		etiqueta.setText(out);
 	}
 
 
