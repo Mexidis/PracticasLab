@@ -12,13 +12,13 @@ public class Elemento extends Thread {
 	public void run(){
 		JLabel out = etiqueta;
 		for (int i = 0; i < 30 ; i++) {
-			out += c;
+			
 			try{
                 Thread.sleep(500);
 			} catch (InterruptedException e) {
             // ignore it
             }
 		}
-        JLabel label = new JLabel("Finalizado");
+        JLabel etiqueta = new JLabel("Finalizado");
 	}
 }
