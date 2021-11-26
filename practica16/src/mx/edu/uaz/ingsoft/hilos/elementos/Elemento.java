@@ -10,8 +10,7 @@ public class Elemento extends Thread {
 	}
 
 	public void run(){
-		// pendiente c = 'X'
-		//JLabel out = c;
+		JLabel out = etiqueta;
 		for (int i = 0; i < 30 ; i++) {
 			//pendiente
 			try{

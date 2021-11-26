@@ -33,18 +33,14 @@ public class Ventana extends JFrame{
 				dispose();
 			}
 		});
-		etiquetaNorte = new JLabel();
-		//" ".add(etiquetaNorte);
-		etiquetaSur = new JLabel();
-		//" ".add(etiquetaSur);
+		etiquetaNorte = new JLabel("Aqui es el Norte");
+		etiquetaSur = new JLabel("Aqui es el sur");
 		setJMenuBar(menuBar);
 	}
 
 	public void mostrarVentana(){
+		setTitle("Practica16");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		// add(mnArchivo);
-		// add(miIniciarHilos);
-		// add(miSalir);
 		add(etiquetaNorte, BorderLayout.NORTH);
 		add(etiquetaSur, BorderLayout.SOUTH);
 		setSize(800,200);
