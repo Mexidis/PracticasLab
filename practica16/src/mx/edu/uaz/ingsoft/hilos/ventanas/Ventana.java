@@ -15,6 +15,7 @@ public class Ventana extends JFrame{
 	private JLabel etiquetaSur;
 
 	public Ventana(){
+		//Acciones siempre debe de ir al inicio de la venta
 		acc = new Acciones(this);
 		menuBar = new JMenuBar();
 		mnArchivo = new JMenu("Archivo");

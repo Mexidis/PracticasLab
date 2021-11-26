@@ -11,7 +11,9 @@ public class Elemento extends Thread {
 
 	public void run(){
 		String out = "";
-		etiqueta.setText(String.valueOf(c));
+		etiqueta.setText(""+c);
+		//todos los primitivos, si se le antesuma un String vacio ""
+		//el primitivo se convierte automáticamente a String
 		for (int i = 0; i < 30 ; i++) {
 			out += c;
 			etiqueta.setText(out);

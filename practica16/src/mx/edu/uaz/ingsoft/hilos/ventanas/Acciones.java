@@ -10,9 +10,9 @@ public class Acciones{
 	public void iniciar(){
 		Elemento e1 = new Elemento(v.getEtiqueta1(), 'A');
 		Elemento e2 = new Elemento(v.getEtiqueta2(), 'S');
-		Thread h1 = new Thread(e1);
-		Thread h2 = new Thread(e2);
-		h1.start();
-		h2.start();
+		// Thread h1 = new Thread(e1);
+		// Thread h2 = new Thread(e2);
+		e1.start();
+		e2.start();
 	}
 }
