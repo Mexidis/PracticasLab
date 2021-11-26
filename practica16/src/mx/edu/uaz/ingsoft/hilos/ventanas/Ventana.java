@@ -10,6 +10,8 @@ public class Ventana extends JFrame{
 	private JMenu mnArchivo;
 	private JMenuItem miIniciarHilos;
 	private JMenuItem miSalir;
+	private JLabel etiquetaNorte;
+	private JLabel etiquetaSur;
 
 	public Ventana(){
 		acc = new Acciones(this);
@@ -30,12 +32,31 @@ public class Ventana extends JFrame{
 				dispose();
 			}
 		});
+		JLabel etiquetaNorte = new JLabel();
+		//" ".add(etiquetaNorte);
+		JLabel etiquetaSur = new JLabel();
+		//" ".add(etiquetaSur);
 	}
+
+	public void mostrarVentana(){
+		setLayout(new FlowLayout());
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		add(menuBar);
+		add(mnArchivo);
+		add(miIniciarHilos);
+		add(miSalir);
+		add(etiquetaNorte, BorderLayout.NORTH);
+		add(etiquetaSur, BorderLayout.SOUTH);
+		setSize(800,200);
+		pack();
+		setVisible(true);
+	}
+		
 
 	public JLabel getEtiqueta1(){
 		return etiquetaNorte;
 	}
-	public JLabel getEtiqueta1(){
+	public JLabel getEtiqueta2(){
 		return etiquetaSur;
 	}	
 
