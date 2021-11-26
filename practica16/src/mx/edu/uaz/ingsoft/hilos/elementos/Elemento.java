@@ -10,10 +10,11 @@ public class Elemento extends Thread {
 	}
 
 	public void run(){
-		JLabel out = etiqueta;
+		String out;
+		String letraDeLaEtiqueta = String.valueOf(c);
+		out.setText(letraDeLaEtiqueta);
 		for (int i = 0; i < 30 ; i++) {
-			String letraDeLaEtiqueta = String.valueOf(c);
-			etiqueta.setText(letraDeLaEtiqueta);
+			
 			//pendiente
 			try{
                 Thread.sleep(500);
@@ -21,7 +22,7 @@ public class Elemento extends Thread {
             // ignore it
             }
 		}
-        //etiqueta "Finalizado" 
+        //out = etiqueta "Finalizado" 
 	}
 
 
