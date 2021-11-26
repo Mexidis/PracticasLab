@@ -12,5 +12,7 @@ public class Acciones{
 		Elemento e2 = new Elemento(v.getEtiqueta2(), 'S');
 		Thread h1 = new Thread(e1);
 		Thread h2 = new Thread(e2);
+		h1.start();
+		h2.start();
 	}
 }

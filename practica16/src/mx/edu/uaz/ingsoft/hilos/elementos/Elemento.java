@@ -21,7 +21,7 @@ public class Elemento extends Thread {
             // ignore it
             }
 		}
-		out += "Finalizado";
+		out += " Finalizado";
 		etiqueta.setText(out);
 	}
 
