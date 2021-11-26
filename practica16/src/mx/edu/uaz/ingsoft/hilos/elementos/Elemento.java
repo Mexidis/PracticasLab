@@ -4,17 +4,10 @@ public class Elemento extends Thread {
 	private char c;
 	private JLabel etiqueta;
 
-	public Elemento(char c, JLabel etiqueta){
+	public Elemento(JLabel etiqueta, char c ){
 		this.c = c;
 		this.etiqueta = etiqueta;
 	}
-
-	// public char getChar(){
-	// 	return c;
-	// }
-	// public JLabel getEtiqueta(){
-	// 	return etiqueta;
-	// }
 
 	public void run(){
 		// pendiente c = 'X'
