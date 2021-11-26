@@ -9,10 +9,18 @@ public class Elemento extends Thread {
 		this.etiqueta = etiqueta;
 	}
 
+	// public char getChar(){
+	// 	return c;
+	// }
+	// public JLabel getEtiqueta(){
+	// 	return etiqueta;
+	// }
+
 	public void run(){
-		JLabel out = etiqueta;
+		// pendiente c = 'X'
+		//JLabel out = c;
 		for (int i = 0; i < 30 ; i++) {
-			
+			//pendiente
 			try{
                 Thread.sleep(500);
 			} catch (InterruptedException e) {
@@ -21,4 +29,6 @@ public class Elemento extends Thread {
 		}
         JLabel etiqueta = new JLabel("Finalizado");
 	}
+
+
 }
