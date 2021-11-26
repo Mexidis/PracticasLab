@@ -12,6 +12,8 @@ public class Elemento extends Thread {
 	public void run(){
 		JLabel out = etiqueta;
 		for (int i = 0; i < 30 ; i++) {
+			String letraDeLaEtiqueta = String.valueOf(c);
+			etiqueta.setText(letraDeLaEtiqueta);
 			//pendiente
 			try{
                 Thread.sleep(500);
@@ -19,7 +21,7 @@ public class Elemento extends Thread {
             // ignore it
             }
 		}
-        JLabel etiqueta = new JLabel("Finalizado");
+        //etiqueta "Finalizado" 
 	}
 
 
